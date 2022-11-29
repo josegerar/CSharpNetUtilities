@@ -37,6 +37,6 @@ public static class LinkExtension
     public static IEnumerable<T> FilterEnums<T>(this string search)
     {
         search ??= "";
-        return Enum.GetValues(typeof(T)).Cast<T>().Where(m => m.ToString().ToLower().Contains(search.ToLower()));
+        return Enum.GetValues(typeof(T)).Cast<T>().Where(m => m!.ToString()!.ToLower().Contains(search.ToLower()));
     }
 }
