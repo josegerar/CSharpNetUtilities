@@ -43,5 +43,21 @@ namespace CSharpNetUtilities
             search ??= "";
             return Enum.GetValues(typeof(T)).Cast<T>().Where(m => m!.ToString()!.ToLower().Contains(search.ToLower()));
         }
+
+        public static void ForEach<T>(this IEnumerable<T> sequence, Action<T> action)
+        {
+            if (sequence == null)
+            {
+                throw new ArgumentNullException(nameof(sequence));
+            }
+            if (action == null)
+            {
+                throw new ArgumentNullException(nameof(action));
+            }
+            foreach (T item in sequence)
+            {
+                action(item);
+            }
+        }
     }
 }
