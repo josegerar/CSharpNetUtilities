@@ -5,6 +5,8 @@ VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpNetUtilities", "src\CSharpNetUtilities.csproj", "{421EF79C-ACDF-4B89-9517-62C75362B2A2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpNetUtilities.Test", "CSharpNetUtilities.Test\CSharpNetUtilities.Test.csproj", "{0C900D0E-A338-479F-819A-33F3F7658CE1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{421EF79C-ACDF-4B89-9517-62C75362B2A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{421EF79C-ACDF-4B89-9517-62C75362B2A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{421EF79C-ACDF-4B89-9517-62C75362B2A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C900D0E-A338-479F-819A-33F3F7658CE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C900D0E-A338-479F-819A-33F3F7658CE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C900D0E-A338-479F-819A-33F3F7658CE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C900D0E-A338-479F-819A-33F3F7658CE1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
