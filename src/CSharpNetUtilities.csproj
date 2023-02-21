@@ -3,7 +3,7 @@
 	<PropertyGroup>
 		<TargetFrameworks>net5.0;net6.0;net7.0</TargetFrameworks>
 		<Title>Adding utilities to work with c# code</Title>
-		<Version>1.0.5</Version>
+		<Version>1.0.6</Version>
 		<Authors>Jose Garcia Lopez</Authors>
 		<Description>Adding utilities to work with c# code</Description>
 		<PackageProjectUrl>https://github.com/josegerar/CSharpNetUtilities</PackageProjectUrl>
@@ -11,7 +11,7 @@
 		<RepositoryUrl>https://github.com/josegerar/CSharpNetUtilities</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
 		<PackageTags>c#;.Net</PackageTags>
-		<PackageReleaseNotes>Adding support net5.0</PackageReleaseNotes>
+		<PackageReleaseNotes>Add default value to Truncate extension method</PackageReleaseNotes>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 
 		<Nullable>enable</Nullable>

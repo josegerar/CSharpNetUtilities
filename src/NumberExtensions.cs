@@ -96,42 +96,43 @@ namespace CSharpNetUtilities
         {
             return value.Percent(percent.ToDecimal());
         }
-        public static string? Truncate(this double value, int decimales)
+        public static string? Truncate(this double value, int decimales, string? defaultValue = null)
         {
-            return ((decimal)value).Truncate(decimales);
+            return ((decimal)value).Truncate(decimales, defaultValue);
         }
-        public static string? Truncate(this double? value, int decimales)
+        public static string? Truncate(this double? value, int decimales, string? defaultValue = null)
         {
             if (!value.HasValue)
             {
-                return null;
+                return defaultValue;
             }
-            return ((decimal)value.Value).Truncate(decimales);
+            return ((decimal)value.Value).Truncate(decimales, defaultValue);
         }
-        public static string? Truncate(this decimal? value, int decimales)
+        public static string? Truncate(this decimal? value, int decimales, string? defaultValue = null)
         {
             if (!value.HasValue)
             {
-                return null;
+                return defaultValue;
             }
-            return value.Value.Truncate(decimales);
+            return value.Value.Truncate(decimales, defaultValue);
         }
-        public static string? Truncate(this decimal value, int decimales)
+        public static string? Truncate(this decimal value, int decimales, string? defaultValue = null)
         {
-            return value == 0 ? null : decimal.Round(value, decimales)
-                .ToString($"F{decimales}", CultureInfo.InvariantCulture);
+            return value == 0
+                ? defaultValue
+                : decimal.Round(value, decimales).ToString($"F{decimales}", CultureInfo.InvariantCulture);
         }
-        public static string? Truncate(this float? value, int decimales)
+        public static string? Truncate(this float? value, int decimales, string? defaultValue = null)
         {
             if (!value.HasValue)
             {
-                return null;
+                return defaultValue;
             }
-            return value.Value.Truncate(decimales);
+            return value.Value.Truncate(decimales, defaultValue);
         }
-        public static string? Truncate(this float value, int decimales)
+        public static string? Truncate(this float value, int decimales, string? defaultValue = null)
         {
-            return ((decimal)value).Truncate(decimales);
+            return ((decimal)value).Truncate(decimales, defaultValue);
         }
     }
 }
