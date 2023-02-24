@@ -20,24 +20,6 @@ namespace CSharpNetUtilities
             return true;
         }
 
-        public static void Clear<T>(this IEnumerable<T> source)
-        {
-            source.ToList().Clear();
-        }
-
-        public static void AddRange<T>(this IList<T> source, IList<T> values)
-        {
-            foreach (var item in values)
-            {
-                source.Add(item);
-            }
-        }
-
-        public static void AddRange<T>(this IEnumerable<T> source, IList<T> values)
-        {
-            source.ToList().AddRange(values);
-        }
-
         public static IEnumerable<T> FilterEnums<T>(this string search)
         {
             search ??= "";
