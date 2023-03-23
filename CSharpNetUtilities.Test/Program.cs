@@ -12,6 +12,8 @@ namespace CSharpNetUtilities.Test
             decimal? res = null;
 
             Console.WriteLine(res.Truncate(2, "0"));
+
+            Console.WriteLine("papa".ToTitleCase());
         }
     }
 }

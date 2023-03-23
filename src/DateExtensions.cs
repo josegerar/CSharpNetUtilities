@@ -18,11 +18,11 @@ namespace CSharpNetUtilities
 
 #endif
 
-        public static DateTime? ParseDatetimeForTicks(this long datatimelong)
+        public static DateTime? ParseDatetimeForTicks(this long ticks)
         {
             try
             {
-                return new DateTime(datatimelong);
+                return new DateTime(ticks);
             }
             catch
             {
@@ -30,11 +30,11 @@ namespace CSharpNetUtilities
             }
         }
 
-        public static DateTime? ParseDatetimeForSeconds(this long datatimelong)
+        public static DateTime? ParseDatetimeForSeconds(this long seconds)
         {
             try
             {
-                return DateTimeOffset.FromUnixTimeSeconds(datatimelong).DateTime;
+                return DateTimeOffset.FromUnixTimeSeconds(seconds).DateTime;
             }
             catch
             {
